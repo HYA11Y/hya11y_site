@@ -1,0 +1,76 @@
+// ----- COLORS ----- //
+
+$primary: #005290;
+$secondary: #7A003F;
+$tertiary: #434343;
+$white: #fff;
+
+// ----- FONTS ----- //
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab:400,700');
+
+$main_font: 'Roboto Slab', serif;
+$secondary_font: 'Open Sans', sans-serif;
+
+$base: 16px;
+$heading: 2.8125rem;
+$subhead: 1.75rem;
+$footer-subhead: 1.5rem;
+$button-text: 1rem;
+$body-text: 1.125rem;
+
+// ----- HEADINGS ----- //
+
+h1 {
+  font-family: $main_font;
+  font-size: $heading;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: $main-font;
+  font-size: $subhead;
+  font-weight: bold;
+}
+
+.subhead {
+  font-size: $subhead;
+}
+
+
+// ----- LINKS ----- //
+
+a {
+  color: $secondary;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: $white;
+  background-color: $primary;
+  text-decoration: none;
+}
+
+footer {
+  a {
+    color: $white;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    color: $tertiary;
+    background-color: $white;
+    text-decoration: none;
+  }
+}
+
+// ----- LAYOUT ----- //
+
+body {
+  font-size: $base;
+}
+
+.wrapper {
+  width: 960px;
+	margin: 0 auto;
+}
