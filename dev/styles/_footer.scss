@@ -1,0 +1,29 @@
+.main-footer {
+  padding: 30px 2.5rem;
+  background-color: $grey;
+  color: $white;
+
+  h2 {
+    color: $white;
+    font-size: 2rem;
+  }
+
+  a {
+    color: $white;
+  }
+}
+
+.main-footer--wrapper {
+  display: flex;
+}
+
+.footer-container {
+  width: 25%;  
+}
+
+.main-footer--copyright {
+  background-color: $grey-dark;
+  color: $white;
+  text-align: right;
+  padding: 1rem 0;
+}

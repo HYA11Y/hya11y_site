@@ -6,85 +6,119 @@
 	<link rel="stylesheet" href="public/styles/style.css">
 </head>
 <body>
-	<div class="wrapper">
-		<nav class="main-nav">
-			<ul>
-				<li><a href="">Home</a></li>
-				<li><a href="">About</a></li>
-				<li><a href="">Events</a></li>
-				<li><a href="">Speakers</a></li>
-				<li><a href="">Resources</a></li>
-				<li><a href="">Contact</a></li>
+	<div>
+		<nav class="main-nav wrapper">
+			<!-- Image credit: "coding" by Jugalbandi from the Noun Project -->
+			<img class="main-nav__logo" src="assets/logo.svg" alt="">
+
+			<ul class="">
+				<li><a href="index.html" aria-current="page">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="events.html">Events</a></li>
+				<li><a href="speakers.html">Speakers</a></li>
+				<li><a href="resources.html">Resources</a></li>
+				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
 	</div>
 
-	<section class="home__hero">
+	<section class="gutters home-hero">
 		<div class="wrapper">
-			<h1>HackerYou Accessibility Club</h1>
-			<p class="subhead">A meetup for junior developers working to make the web an inclusive place.</p>
-			<p><a href="">Learn more about the club</a></p>
+			<h1 class="home-hero__heading"><span class="home-hero__heading--thin">HackerYou</span> Accessibility Club</h1>
+			<p class="home-hero__subhead subhead">A meetup for junior developers working to make the web an inclusive place.</p>
+			<p class="home-hero__cta"><a href="">Learn more about the club</a></p>
 		</div>
 	</section>
 
-	<section class="home__upcoming">
-		<h2>Next meetup: Meet your screenreader</h2>
-		<p class="subhead">May 30, 2017 at HackerYou</p>
-		<p>Get an introduction to navigating and testing web content with a screenreader.</p>
-		<p><a href="">Event details</a></p>
+	<section class="gutters home-upcoming">
+		<div class="wrapper">
+			<h2>Next meetup: Website Launch</h2>
+			<p class="home-upcoming__subhead">January 26, 2018 at HackerYou</p>
+			<p class="home-upcoming__description">Help us celebrate the launch of our new website and monthly newsletter!</p>
+			<p class="home-upcoming__cta"><a href="">Event details</a></p>
+		</div>
 	</section>
 
-	<section class="home_missed">
-		<h2>Missed a meetup?</h2>
-		<p class="subhead">Read our recaps</p>
-		<p>Check out our <a href="">blog</a> for recaps of our previous meetups.</p>
+	<section class="gutter--bottom-only home-missed">
+		<div class="wrapper home-missed__wrapper">
+			<div class="home-missed__image">
+				<img src="assets/home/missed-a-meetup.jpg" alt="">
+			</div>
+			<div class="home-missed__content gutters--half">
+				<h2>Missed a meetup?</h2>
+				<p class="home-missed__subhead">Read our recaps</p>
+				<p class="home-missed__cta"><a href="">Check out our blog</a>for recaps of our previous meetups.</p>
+			</div>
+		</div>
 	</section>
 
-	<section class="home_mission">
-		<img src="" alt="">
+	<section class="home-mission">
+		<img class="home-mission__image" src="assets/home/home-banner.png" alt="">
 
-		<blockquote>
+		<!-- <blockquote>
 			<p> “The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect.”</p>
 			<cite>Tim Berners Lee, inventor of the World Wide Web</cite>
-		</blockquote>
+		</blockquote> -->
 	</section>
 
-	<section class="home_contact">
-		<div class="home_contact--email">
-			<h2>Get in touch</h2>
+	<section class="gutters home-contact">
+		<div class="wrapper home-contact__email">
+			<div class="home-email__content">
+				<h2>Get in touch</h2>
 
-			<p>Do you have questions about the club? Or Or tips on how we can make this site more accessible??</p>
+				<p class="home-email__description">Do you have questions about the club? Or Or tips on how we can make this site more accessible?</p>
 
-			<p>Please don't hesitate to get in touch! We'd love to hear from you.</p>
+				<p class="home-email__description">Please don't hesitate to get in touch! We'd love to hear from you.</p>
 
-			<p><a href="">Send us an email</a></p>
+				<p class="home-email__cta"><a href="">Send us an email</a></p>
+			</div>
+
+			<div class="home-email__image">
+				<img src="assets/home/contact-us.jpg" alt="">
+			</div>
 		</div>
 
-		<div class="home_contact--volunteer">
-			<h2>Volunteer at an upcoming meetup</h2>
-			<p><a href="">Sign up for our volunteer mailing list</a> to learn how you can get involved with the HackerYou Accessibility Club.</p>
-		</div>
+		<div class="gutters">
+			<div class="wrapper home-contact__resources">
+				<div class="home-contact--wrapper">
+					<h2>Volunteer at an upcoming meetup</h2>
+					<p class="home-resources__description"><a href="">Sign up for our volunteer mailing list</a> to learn how you can get involved with the HackerYou Accessibility Club.</p>
+				</div>
 
-		<div class="home_contact--resources">
-			<h2>Learn more about accessibility</h2>
-			<p><a href="">Visit our Resources page</a> to find articles, tutorials, and tools that can help you make your site more accessible.</p>
+				<div class="home-contact--wrapper">
+					<h2>Learn more about accessibility</h2>
+					<p class="home-resources__description"><a href="">Visit our Resources page</a> to find articles, tutorials, and tools that can help you make your site more accessible.</p>
+				</div>
+			</div>
 		</div>
 	</section>
 
-	<footer>
-		<h2>Contact</h2>
-		<p>Email: <a href="">hya11y@gmail.com</a></p>
+	<footer class="gutters main-footer">
+		<div class="wrapper main-footer--wrapper">
+			<div class="footer-container">
+				<h2>Contact</h2>
+				<p>Email: <a href="">hya11y@gmail.com</a></p>
+			</div>
 
-		<h2>Standards</h2>
-		<p><a href="">Code of Conduct</a></p>
-		<p><a href="">Accessibility Statement</a></p>
+			<div class="footer-container">
+				<h2>Standards</h2>
+				<p><a href="">Code of Conduct</a></p>
+				<p><a href="">Accessibility Statement</a></p>
+			</div>
 
-		<h2>Supporters</h2>
-		<p><a href="">HackerYou</a></p>
-		<p><a href="">a11yTO</a></p>
-
-		<p class="subhead">Copyright 2017 HackerYou Accessibility Club</p>
+			<div class="footer-container">
+				<h2>Supporters</h2>
+				<p><a href="">HackerYou</a></p>
+				<p><a href="">a11yTO</a></p>
+			</div>
+		</div>
 	</footer>
+	
+	<div class="main-footer--copyright">
+		<div class="wrapper">
+			<p>Copyright 2017 HackerYou Accessibility Club</p>
+		</div>
+	</div>
 
 
 

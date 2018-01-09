@@ -1,4 +1,94 @@
-.home__hero {
+.home-hero {
+  background: linear-gradient(to right, $white, $grey-light);
+}
 
+.home-hero__heading {
+  font-family: $secondary-font;
+  font-weight: $bold;
+  font-size: $hero;
+  margin: 0;
+}
 
+.home-hero__heading--thin {
+ font-weight: $medium; 
+ display: block;
+}
+
+.home-hero__subhead {
+  font-weight: $regular;
+  max-width: 50%;
+}
+
+.home-hero__cta {
+  font-weight: $medium;
+  font-size: $subhead;
+  font-family: $secondary-font;
+}
+
+.home-upcoming__subhead, 
+.home-missed__subhead {
+  font-size: $subhead * 1.5;
+  font-weight: $medium;
+  margin-bottom: 2.5rem;
+  margin-top: .25rem;
+}
+
+.home-upcoming__description,
+.home-missed__description {
+  font-size: 1.75rem;
+  margin: 0;
+  max-width: 60%;
+}
+
+.home-email__description,
+.home-resources__description {
+  font-size: 1.75rem;
+  margin: 1rem 0;
+}
+
+.home-upcoming__cta, 
+.home-missed__cta,
+.home-email__cta {
+  font-size: $subhead;
+  font-weight: $regular;
+}
+
+.home-missed__wrapper,
+.home-contact__email {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-missed__image,
+.home-missed__content,
+.home-email__image,
+.home-email__content {
+  width: 50%;
+}
+
+.home-missed__image img,
+.home-email__image img {
+  width: 100%;
+}
+
+.home-missed__content {
+  padding-left: 5.625rem;
+}
+
+.home-email__content {
+  padding-right: 5.625rem;
+}
+
+.home-mission__image {
+  width: 100%;
+}
+
+.home-contact__resources {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-contact--wrapper {
+  width: 50%;
+  padding-right: 7rem;
 }

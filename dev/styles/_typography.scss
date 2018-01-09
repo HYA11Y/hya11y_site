@@ -1,0 +1,21 @@
+// ----- FONTS ----- //
+
+// Main Font Family
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+$main-font: 'Roboto', sans-serif;
+
+// Secondary Font Family
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700');
+$secondary-font: 'Roboto Mono', monospace;
+
+// Font Sizes
+$base: 16px;
+$hero: 3.75rem;
+$heading: 2.8125rem;
+$subhead: 1.75rem;
+
+// Font Weights 
+$bold: 700;
+$medium: 500;
+$regular: 400;
+$light: 300;
