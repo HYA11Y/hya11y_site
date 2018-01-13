@@ -1,0 +1,13 @@
+// ----- BREAKPPOINTS ----- //
+
+// Mobile
+$mobile-only: 'screen and (max-width: 750px)';
+
+// Tablet
+$tablet-up: 'screen and (min-width: 751px)';
+$tablet-only: 'screen and (min-width: 751px) and (max-width: 1079px)';
+$tablet-down: 'screen and (max-width: 1079px)';
+
+// Desktop
+$desktop-up: 'screen and (min-width: 1080px)';
+

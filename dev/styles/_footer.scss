@@ -15,15 +15,31 @@
 
 .main-footer--wrapper {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .footer-container {
-  width: 25%;  
+  @media #{$mobile-only} {
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 25px;
+  }
+
+  @media #{$tablet-up} {
+    display: inline-block;
+    width: 25%;
+  }  
 }
 
 .main-footer--copyright {
+  text-align: center;
   background-color: $grey-dark;
   color: $white;
-  text-align: right;
   padding: 1rem 0;
+
+  @media #{$tablet-up} {
+    text-align: right;
+  }
 }

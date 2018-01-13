@@ -1,15 +1,15 @@
+.navigation-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 2.5rem;
+}
 
 .main-nav {
-  padding: 30px 2.5rem;
+  list-style-type: none;
   display: flex;
-  align-items: center;
-  
-  
-  ul {
-    list-style-type: none;
-    display: flex;
-    padding-left: 0;
-  }
+  padding-left: 0;
+
   
   li {
     margin-right: 10px;
@@ -34,7 +34,30 @@ a[aria-current="page"]::after  {
   left: 0;
 }
 
-.main-nav__logo {
+.main-nav__logo-link {
+  display: flex;
+  align-items: center;
+
+  &:hover, 
+  &:focus {
+    background-color: transparent;
+
+    .logo-link__text {
+      position: relative;
+      left: .5rem;
+      width:auto; 
+      height:auto;
+    }
+  }
+}
+
+.logo-link__logo {
   height: 2.5rem;
-  padding-right: 30px;
+}
+
+.logo-link__text {
+  color: black;  
+  font-family: $main-font;
+  font-weight: $regular;
+  font-size: 1.125rem;
 }

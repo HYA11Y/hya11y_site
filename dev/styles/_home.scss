@@ -1,3 +1,5 @@
+
+// HERO 
 .home-hero {
   background: linear-gradient(to right, $white, $grey-light);
 }
@@ -5,8 +7,12 @@
 .home-hero__heading {
   font-family: $secondary-font;
   font-weight: $bold;
-  font-size: $hero;
-  margin: 0;
+  // font-size: 1rem;
+
+  @media  #{$tablet-up} {
+    font-size: $hero;
+    margin: 0;
+  }
 }
 
 .home-hero__heading--thin {
@@ -16,7 +22,10 @@
 
 .home-hero__subhead {
   font-weight: $regular;
-  max-width: 50%;
+  
+  @media  #{$tablet-up} {
+    max-width: 50%;
+  }
 }
 
 .home-hero__cta {
@@ -25,70 +34,180 @@
   font-family: $secondary-font;
 }
 
-.home-upcoming__subhead, 
-.home-missed__subhead {
-  font-size: $subhead * 1.5;
+// NEXT MEETUP
+
+.home-upcoming {
+  h2 {
+    @media #{$mobile-only} {
+      font-size: $subhead * 1.25;
+    }
+  }
+}
+
+.home-upcoming__subhead {
+  font-size: $subhead;
   font-weight: $medium;
   margin-bottom: 2.5rem;
-  margin-top: .25rem;
+
+  @media #{$tablet-up} {
+    margin-top: .25rem;
+    font-size: $subhead * 1.5;
+  }
 }
 
-.home-upcoming__description,
-.home-missed__description {
-  font-size: 1.75rem;
-  margin: 0;
-  max-width: 60%;
+.home-upcoming__description {
+  font-size: 1.5rem;
+
+  @media #{$tablet-up} {
+    font-size: 1.75rem;
+    margin: 0;
+    max-width: 60%;
+  }
 }
 
-.home-email__description,
-.home-resources__description {
-  font-size: 1.75rem;
-  margin: 1rem 0;
-}
-
-.home-upcoming__cta, 
-.home-missed__cta,
-.home-email__cta {
+.home-upcoming__cta {
   font-size: $subhead;
   font-weight: $regular;
 }
 
-.home-missed__wrapper,
-.home-contact__email {
-  display: flex;
-  justify-content: space-between;
+
+// MISSED A MEETUP
+
+.home-missed__wrapper {
+  @media #{$tablet-up} {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
-.home-missed__image,
-.home-missed__content,
-.home-email__image,
-.home-email__content {
-  width: 50%;
-}
-
-.home-missed__image img,
-.home-email__image img {
-  width: 100%;
+.home-missed {
+  h2 {
+    @media #{$mobile-only} {
+      font-size: $subhead * 1.25;
+    }
+  }
 }
 
 .home-missed__content {
-  padding-left: 5.625rem;
+  @media #{$tablet-up} {
+    padding-left: 5.625rem;
+  }
 }
 
-.home-email__content {
-  padding-right: 5.625rem;
+.home-missed__content,
+.home-missed__image {
+  width: 100%;
+
+  @media #{$tablet-up} {
+    width: 50%;
+  }
 }
+
+.home-missed__image img {
+  width: 100%;
+}
+
+.home-missed__subhead {
+  font-size: $subhead;
+  font-weight: $medium;
+  margin-bottom: 2.5rem;
+
+  @media #{$tablet-up} {
+    margin-top: .25rem;
+    font-size: $subhead * 1.5;
+  }
+}
+
+
+.home-missed__description {
+  font-size: 1.5rem;
+
+  @media #{$tablet-up} {
+    font-size: 1.75rem;
+    margin: 0;
+    max-width: 60%;
+  }
+}
+
+.home-missed__cta {
+  font-size: $subhead;
+  font-weight: $regular;
+}
+
+// OUR MISSION
 
 .home-mission__image {
   width: 100%;
 }
 
-.home-contact__resources {
-  display: flex;
-  justify-content: space-between;
+// CONTACT
+
+.home-contact {
+  h2 {
+    @media #{$mobile-only} {
+      font-size: $subhead * 1.25;
+    }
+  }
 }
 
-.home-contact--wrapper {
-  width: 50%;
-  padding-right: 7rem;
+// CONTACT-EMAIL
+
+.home-contact__email {
+  @media #{$tablet-up} {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.home-email__content {  
+  @media #{$tablet-up} {
+    padding-right: 5.625rem;
+  }
+}
+
+.home-email__description {
+  font-size: 1.75rem;
+  margin: 1rem 0;
+}
+
+.home-email__cta {
+  font-size: $subhead;
+  font-weight: $regular;
+}
+
+.home-email__image,
+.home-email__content {
+  width: 100%;
+
+  @media #{$tablet-up} {
+    width: 50%;
+  }
+}
+
+.home-email__image img {
+  width: 100%;
+}
+
+// CONTACT-RESOURCES
+
+.home-contact__resources {
+  @media #{$tablet-up} {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.home-resources--wrapper {
+  padding-top: 50px;
+
+  @media #{$tablet-up} {
+    padding-top: 0;
+    width: 50%;
+    padding-right: 7rem;
+  }
+}
+
+.home-resources__description {
+  font-size: 1.75rem;
+  margin: 1rem 0;
 }
