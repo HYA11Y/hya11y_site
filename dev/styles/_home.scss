@@ -7,7 +7,6 @@
 .home-hero__heading {
   font-family: $secondary-font;
   font-weight: $bold;
-  // font-size: 1rem;
 
   @media  #{$tablet-up} {
     font-size: $hero;
@@ -16,7 +15,7 @@
 }
 
 .home-hero__heading--thin {
- font-weight: $medium; 
+ font-weight: $semi-bold; 
  display: block;
 }
 

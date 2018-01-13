@@ -1,8 +1,8 @@
 // ----- FONTS ----- //
 
 // Main Font Family
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
-$main-font: 'Roboto', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+$main-font: 'Open Sans', sans-serif;
 
 // Secondary Font Family
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700');
@@ -16,6 +16,7 @@ $subhead: 1.75rem;
 
 // Font Weights 
 $bold: 700;
+$semi-bold: 600; // Open Sans only
 $medium: 500;
 $regular: 400;
 $light: 300;

@@ -17,6 +17,7 @@
 
   a {
     padding: 10px 15px;
+    font-weight: $semi-bold;
     font-size: 1.125rem;
     line-height: 1.5;
     text-decoration: none;
@@ -58,6 +59,6 @@ a[aria-current="page"]::after  {
 .logo-link__text {
   color: black;  
   font-family: $main-font;
-  font-weight: $regular;
+  font-weight: $semi-bold;
   font-size: 1.125rem;
 }

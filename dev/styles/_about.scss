@@ -1,0 +1,145 @@
+// HERO 
+
+.about-hero {
+  // background: linear-gradient( to bottom, $grey-light, $white);  
+}
+
+.about-hero__heading {
+  font-family: $secondary-font;
+  font-weight: $bold;
+  color: $primary-dark;
+
+  @media  #{$tablet-up} {
+    font-size: $hero;
+    margin-top: 0;
+  }
+}
+
+.about-hero p {
+  font-size: 1.5rem;
+  
+  @media #{$tablet-up} {
+    font-size: 1.75rem;
+    width: 100%;    
+  }
+
+  @media #{$desktop-up} {
+    width: 75%;
+  }
+}
+
+// MEET THE TEAM
+
+.team-container {
+  @media #{$mobile-only} {
+    padding-top: 50px;
+  }
+
+  @media #{$tablet-up} {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.team__member {
+  width: 100%;
+  text-align: center;
+
+  @media #{$mobile-only} {
+    padding-bottom: 50px;
+  }
+
+  @media #{$tablet-up} {
+    max-width: 30%;
+  }
+  
+  img {
+    @media #{$tablet-only} {
+      max-width: 200px;
+      max-height: 200px;
+    }
+
+    @media #{$desktop-up} {
+      max-width: 300px;
+      max-height: 300px;
+    }
+  }
+
+  .name {
+    font-weight: $semi-bold;
+    font-size: 1.75rem;
+    margin-bottom: 0;
+
+    @media #{$tablet-up} {
+      font-size: 1.5rem;      
+    }
+  }
+
+  .twitter {
+    color: $primary-dark;
+    font-family: $secondary-font;    
+
+    @media #{$mobile-only} {
+      font-size: 1.75rem;
+      margin-bottom: 0;
+      margin-top: 10px;
+    }
+  }
+}
+
+// VOLUNTEERS
+
+.about-volunteers {
+  h3 {
+    font-family: $secondary-font;
+    font-weight: $medium;
+    font-size: 2.5rem;
+    color: $primary-dark;  
+  }
+
+  p { 
+    font-size: 1.5rem;
+  }
+}
+
+.about-volunteers--wrapper {
+  h3 {
+    @media #{$mobile-only} {
+      margin-bottom: 100px;
+    }
+  }
+}
+
+.volunteer-container {
+
+  @media #{$tablet-up} {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.volunteer__member {
+  text-align: center;
+  margin: 0 auto;
+  
+  img {
+    max-width: 200px;
+
+    @media #{$tablet-only} {
+      max-width: 100px;
+      max-height: 100px;
+    }
+
+    @media #{$desktop-up} {
+      max-width: 200px;
+      max-height: 200px;
+    }
+  }
+
+  .name {
+    font-weight: $semi-bold;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    text-align: center;
+  }
+}

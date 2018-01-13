@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700");
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
@@ -134,7 +134,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box; }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px; }
 
 .wrapper {
@@ -177,6 +177,7 @@ h2 {
 a,
 a:visited {
   color: #0069c0;
+  font-weight: 600;
   text-decoration: underline;
   padding: 10px;
   margin-left: -10px; }
@@ -190,12 +191,9 @@ a:focus {
   color: #fff;
   background-color: #0069c0;
   text-decoration: none; }
-  a:hover .external-link,
-  a:focus .external-link {
-    fill: #f0f; }
 
 .skip-link {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.75rem; }
 
 .skip-link:focus {
@@ -234,6 +232,7 @@ a:focus {
     margin-right: 10px; }
   .main-nav a {
     padding: 10px 15px;
+    font-weight: 600;
     font-size: 1.125rem;
     line-height: 1.5;
     text-decoration: none;
@@ -268,8 +267,8 @@ a[aria-current="page"]::after {
 
 .logo-link__text {
   color: black;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
   font-size: 1.125rem; }
 
 .main-footer {
@@ -299,6 +298,12 @@ a[aria-current="page"]::after {
 
 @media screen and (min-width: 751px) {
   .footer-container {
+    padding-bottom: 25px;
+    text-align: center;
+    width: 100%; } }
+
+@media screen and (min-width: 1080px) {
+  .footer-container {
     display: inline-block;
     width: 25%; } }
 
@@ -307,7 +312,7 @@ a[aria-current="page"]::after {
   background-color: #000000;
   color: #fff;
   padding: 1rem 0; }
-  @media screen and (min-width: 751px) {
+  @media screen and (min-width: 1080px) {
     .main-footer--copyright {
       text-align: right; } }
 
@@ -324,7 +329,7 @@ a[aria-current="page"]::after {
       margin: 0; } }
 
 .home-hero__heading--thin {
-  font-weight: 500;
+  font-weight: 600;
   display: block; }
 
 .home-hero__subhead {
@@ -471,3 +476,107 @@ a[aria-current="page"]::after {
 .home-resources__description {
   font-size: 1.75rem;
   margin: 1rem 0; }
+
+.about-hero__heading {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+  color: #0069c0; }
+  @media screen and (min-width: 751px) {
+    .about-hero__heading {
+      font-size: 3.75rem;
+      margin-top: 0; } }
+
+.about-hero p {
+  font-size: 1.5rem; }
+  @media screen and (min-width: 751px) {
+    .about-hero p {
+      font-size: 1.75rem;
+      width: 100%; } }
+  @media screen and (min-width: 1080px) {
+    .about-hero p {
+      width: 75%; } }
+
+@media screen and (max-width: 750px) {
+  .team-container {
+    padding-top: 50px; } }
+
+@media screen and (min-width: 751px) {
+  .team-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; } }
+
+.team__member {
+  width: 100%;
+  text-align: center; }
+  @media screen and (max-width: 750px) {
+    .team__member {
+      padding-bottom: 50px; } }
+  @media screen and (min-width: 751px) {
+    .team__member {
+      max-width: 30%; } }
+  @media screen and (min-width: 751px) and (max-width: 1079px) {
+    .team__member img {
+      max-width: 200px;
+      max-height: 200px; } }
+  @media screen and (min-width: 1080px) {
+    .team__member img {
+      max-width: 300px;
+      max-height: 300px; } }
+  .team__member .name {
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 0; }
+    @media screen and (min-width: 751px) {
+      .team__member .name {
+        font-size: 1.5rem; } }
+  .team__member .twitter {
+    color: #0069c0;
+    font-family: "Roboto Mono", monospace; }
+    @media screen and (max-width: 750px) {
+      .team__member .twitter {
+        font-size: 1.75rem;
+        margin-bottom: 0;
+        margin-top: 10px; } }
+
+.about-volunteers h3 {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 500;
+  font-size: 2.5rem;
+  color: #0069c0; }
+
+.about-volunteers p {
+  font-size: 1.5rem; }
+
+@media screen and (max-width: 750px) {
+  .about-volunteers--wrapper h3 {
+    margin-bottom: 100px; } }
+
+@media screen and (min-width: 751px) {
+  .volunteer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; } }
+
+.volunteer__member {
+  text-align: center;
+  margin: 0 auto; }
+  .volunteer__member img {
+    max-width: 200px; }
+    @media screen and (min-width: 751px) and (max-width: 1079px) {
+      .volunteer__member img {
+        max-width: 100px;
+        max-height: 100px; } }
+    @media screen and (min-width: 1080px) {
+      .volunteer__member img {
+        max-width: 200px;
+        max-height: 200px; } }
+  .volunteer__member .name {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    text-align: center; }

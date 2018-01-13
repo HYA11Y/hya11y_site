@@ -76,6 +76,7 @@ h2 {
 a,
 a:visited {
   color: $primary-dark;
+  font-weight: $semi-bold;
   text-decoration: underline;
   padding: 10px;
   margin-left: -10px;
@@ -91,16 +92,12 @@ a:focus {
   color: $white;
   background-color: $primary-dark;
   text-decoration: none;
-
-  .external-link {
-    fill: #f0f;
-  }
 }
 
 // ----- SKIP LINK ----- //
 
 .skip-link { 
-  font-weight: $medium;
+  font-weight: $semi-bold;
   font-size: $subhead;   
 } 
  

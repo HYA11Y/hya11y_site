@@ -28,6 +28,12 @@
   }
 
   @media #{$tablet-up} {
+    padding-bottom: 25px;
+    text-align: center;
+    width: 100%;
+  }  
+
+  @media #{$desktop-up} {
     display: inline-block;
     width: 25%;
   }  
@@ -39,7 +45,7 @@
   color: $white;
   padding: 1rem 0;
 
-  @media #{$tablet-up} {
+  @media #{$desktop-up} {
     text-align: right;
   }
 }
