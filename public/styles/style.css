@@ -608,10 +608,12 @@ a:focus {
     width: 75%; } }
 
 .events-previous__block {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+  width: 100%; }
+  @media screen and (min-width: 751px) {
+    .events-previous__block {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
 
 @media screen and (min-width: 751px) {
   .events-previous__details {
@@ -624,3 +626,57 @@ a:focus {
 @media screen and (min-width: 1080px) {
   .events-previous__details h3 {
     font-size: 2rem; } }
+
+.speakers-hero {
+  background: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#fff));
+  background: linear-gradient(to bottom, #eeeeee, #fff); }
+  @media screen and (min-width: 751px) {
+    .speakers-hero p {
+      font-size: 1.75rem;
+      width: 100%; } }
+  @media screen and (min-width: 1080px) {
+    .speakers-hero p {
+      font-size: 1.5rem;
+      width: 75%; } }
+
+.speakers-hero__heading {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+  color: #0069c0; }
+  @media screen and (min-width: 751px) {
+    .speakers-hero__heading {
+      font-size: 3.75rem;
+      margin-top: 0; } }
+
+@media screen and (min-width: 751px) {
+  .speakers-past p {
+    font-size: 1.75rem;
+    width: 100%; } }
+
+@media screen and (min-width: 1080px) {
+  .speakers-past p {
+    font-size: 1.5rem;
+    width: 75%; } }
+
+.speakers-past--wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+@media screen and (min-width: 751px) {
+  .speakers-past__block {
+    width: 45%; } }
+
+@media screen and (min-width: 751px) {
+  .speakers-past__block p {
+    font-size: 1.75rem; } }
+
+@media screen and (min-width: 1080px) {
+  .speakers-past__block p {
+    font-size: 2rem;
+    font-weight: bold; } }
