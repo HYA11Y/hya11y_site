@@ -238,6 +238,119 @@ a:focus {
     text-decoration: none;
     position: relative; }
 
+<<<<<<< HEAD
+=======
+.main-nav[hidden] {
+  display: none; }
+
+a[aria-current="page"]::after {
+  content: "";
+  height: 5px;
+  width: 100%;
+  background-color: #c7a500;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+
+.main-nav__logo-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .main-nav__logo-link:hover, .main-nav__logo-link:focus {
+    background-color: transparent; }
+    .main-nav__logo-link:hover .logo-link__text, .main-nav__logo-link:focus .logo-link__text {
+      position: relative;
+      left: .5rem;
+      width: auto;
+      height: auto; }
+
+.logo-link__logo {
+  height: 2.5rem; }
+
+.logo-link__text {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem; }
+
+/* ------------------------------------
+  Mobile Nav to-do list
+  - fix menu to top of screen *** I can't figure out how to have this fixed and allow vertical scroll ***
+  - set javascript to tab trap menu links when menu is open
+  - reload styles when user resizes screen
+--------------------------------------*/
+@media screen and (max-width: 750px) {
+  .no-js .navigation-wrapper {
+    display: block; }
+  .no-js .main-nav__button {
+    display: none; }
+  .main-nav__button {
+    background: #0069c0;
+    color: #fff;
+    font-weight: bold;
+    border: 5px solid #fff;
+    border-radius: 5px;
+    padding: 15px 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .main-nav__button svg {
+      width: 1rem;
+      height: 1rem;
+      margin-right: 10px; }
+    .main-nav__button[aria-expanded=true] {
+      background: #fff;
+      color: #0069c0;
+      border: 3px solid #0069c0; }
+  .navigation-wrapper {
+    width: 100%;
+    top: 0;
+    background: white; }
+  .main-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding: 0 2.5rem;
+    background: #fff;
+    text-align: center;
+    position: absolute;
+    left: 0; }
+    .main-nav li,
+    .main-nav a {
+      width: inherit; }
+    .main-nav li {
+      margin: 10px 0; }
+    .main-nav a {
+      margin: 0;
+      padding: 20px;
+      border: 2px solid #0069c0;
+      background: rgba(0, 105, 192, 0.1);
+      color: #0069c0;
+      display: block;
+      -webkit-transition: background 0.3s;
+      transition: background 0.3s; }
+      .main-nav a:hover, .main-nav a:focus {
+        background: #0069c0;
+        color: #fff; }
+    .main-nav a[aria-current="page"] {
+      border: 2px solid #c7a500;
+      background: rgba(199, 165, 0, 0.1);
+      color: #c7a500; }
+      .main-nav a[aria-current="page"]::after {
+        background: transparent; }
+      .main-nav a[aria-current="page"]:hover, .main-nav a[aria-current="page"]:focus {
+        color: #fff;
+        background: #c7a500; } }
+
+>>>>>>> mobile-menu
 .main-footer {
   padding: 30px 2.5rem;
   background-color: #212121;
