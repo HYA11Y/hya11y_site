@@ -285,6 +285,7 @@ a[aria-current="page"]::after {
   *** NEED TO DO ***
   - set breakpoints to show menu button and change styles
   - set javascript to tab trap menu links when menu is open
+  - add ESC key to javascript to close menu
 --------------------------------------*/
 .main-nav__button {
   background: #0069c0;
