@@ -5,7 +5,7 @@
 	<title>HackerYou Web Accessibility Club</title>
 	<link rel="stylesheet" href="public/styles/style.css">
 </head>
-<body>
+<body class="no-js">
 	<!-- The use of an SVG sprite to render the menu icon is drawn from Heydon Pickering's book: Inclusive Design Patterns, "A Menu Button" chapter -->
 	<svg style="display:none">
 		<symbol id="navicon" viewBox="0 0 20 20">
@@ -26,7 +26,7 @@
 			<!-- a11y tip from Heydon Pickering: Menu button should be placed within the <nav>, so it's still reachable by landmark navigation 
 			https://twitter.com/heydonworks/status/766948134169620480
 			-->
-			<button class="main-nav__button" aria-expanded="false">
+			<button class="main-nav__button" aria-expanded="false" hidden>
 				<svg>
 					<use xlink:href="#navicon"></use>
 				</svg>
