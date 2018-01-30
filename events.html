@@ -5,7 +5,15 @@
 	<title>About - HackerYou Web Accessibility Club</title>
 	<link rel="stylesheet" href="public/styles/style.css">
 </head>
-<body>
+<body class="no-js">
+  <!-- The use of an SVG sprite to render the menu icon is drawn from Heydon Pickering's book: Inclusive Design Patterns, "A Menu Button" chapter -->
+  <svg style="display:none">
+    <symbol id="navicon" viewBox="0 0 20 20">
+      <path d="m0-0v4h20v-4h-20zm0 8v4h20v-4h-20zm0 8v4h20v-4h-20z" 
+      fill="currentColor" />
+    </symbol>
+  </svg>
+  
 	<a class="skip-link visuallyhidden" href="#main">Skip to main</a>
 	<div class=" wrapper navigation-wrapper">
 		<a href="home.html" class="main-nav__logo-link">
@@ -14,11 +22,14 @@
 			<span class="logo-link__text visuallyhidden">Home</span>
 		</a>
 
-		<!-- <nav role="navigation"> -->
-			<!-- <button class="main-nav__button">
-				Menu
-			</button> -->
-			<!-- <ul class="main-nav">
+		<nav role="navigation" aria-label="site">
+			<button class="main-nav__button" aria-expanded="false" hidden>
+        <svg>
+          <use xlink:href="#navicon"></use>
+        </svg>
+        Menu
+      </button>
+			<ul class="main-nav">
 				<li><a href="index.html">Home</a></li>
 				<li><a href="about.html">About</a></li>
 				<li><a href="events.html" aria-current="page">Events</a></li>
@@ -26,7 +37,7 @@
 				<li><a href="resources.html">Resources</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
-		</nav> -->
+		</nav>
 	</div>
 
 	<main>
