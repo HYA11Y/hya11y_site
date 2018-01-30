@@ -113,12 +113,12 @@ a[aria-current="page"]::after  {
   }
 
   .main-nav {
+    // positioning has to be done via javascript-added class
     flex-direction: column;
     width: 100%;
     padding: 0 2.5rem;
     background: $white;
     text-align: center;
-    position: absolute;
     left: 0;
 
     li,
@@ -158,5 +158,19 @@ a[aria-current="page"]::after  {
       }
     }
   }
+  .fixed .navigation-wrapper {
+    position: fixed;
+    width: 100%;
+  }
+  .fixed main {
+    margin-top: 100px;
+  }
+  .fixed .main-nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 40px;
+  }
 }
->>>>>>> mobile-menu

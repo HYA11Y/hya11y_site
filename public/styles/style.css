@@ -238,8 +238,6 @@ a:focus {
     text-decoration: none;
     position: relative; }
 
-<<<<<<< HEAD
-=======
 .main-nav[hidden] {
   display: none; }
 
@@ -321,7 +319,6 @@ a[aria-current="page"]::after {
     padding: 0 2.5rem;
     background: #fff;
     text-align: center;
-    position: absolute;
     left: 0; }
     .main-nav li,
     .main-nav a {
@@ -348,9 +345,20 @@ a[aria-current="page"]::after {
         background: transparent; }
       .main-nav a[aria-current="page"]:hover, .main-nav a[aria-current="page"]:focus {
         color: #fff;
-        background: #c7a500; } }
+        background: #c7a500; }
+  .fixed .navigation-wrapper {
+    position: fixed;
+    width: 100%; }
+  .fixed main {
+    margin-top: 100px; }
+  .fixed .main-nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 40px; } }
 
->>>>>>> mobile-menu
 .main-footer {
   padding: 30px 2.5rem;
   background-color: #212121;
