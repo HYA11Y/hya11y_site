@@ -1,91 +1,65 @@
-// // HERO 
+// HERO 
+// ----------------------------------------------
+.about-hero__heading {
+  font-family: $secondary-font;
+  font-weight: $bold;
+  color: $primary;
 
-// .about-hero {
-//   background: linear-gradient( to bottom, $grey-light, $white);  
-// }
+  @media  #{$tablet-up} {
+    font-size: $hero / 1.25;
+    margin-top: 0;
+  }
+}
 
-// .about-hero__heading {
-//   font-family: $secondary-font;
-//   font-weight: $bold;
-//   color: $primary-dark;
+.about-hero p {
+  font-size: 1.5rem;
+  color: $dark-grey;
+}
 
-//   @media  #{$tablet-up} {
-//     font-size: $hero;
-//     margin-top: 0;
-//   }
-// }
+// MEET THE TEAM
+// ----------------------------------------------
+.about-team__container {
+  background-color: $off-white;
+}
+.about-team__grid {
+  display: grid;
+  grid-template-columns: 30% 30% 30%; 
+  grid-gap: 1rem;
+  justify-content: space-between;
+  // padding-left: 0;
+  // padding-right: 0;
+  // max-height: 580px;
+}
 
-// .about-hero p {
-//   font-size: 1.5rem;
+.about-team__member {
+  width: 100%;
+  text-align: center;
   
-//   @media #{$tablet-up} {
-//     font-size: 1.75rem;
-//     width: 100%;    
-//   }
+  img {
+    width: 100%;
+  }
 
-//   @media #{$desktop-up} {
-//     width: 75%;
-//   }
-// }
+  .name {
+    font-weight: $semi-bold;
+    font-size: 1.75rem;
+    margin-bottom: 0;
 
-// // MEET THE TEAM
+    @media #{$tablet-up} {
+      font-size: 1.5rem;      
+    }
+  }
 
-// .team-container {
-//   @media #{$mobile-only} {
-//     padding-top: 50px;
-//   }
+  .twitter {
+    // color: $primary-dark;
+    // font-family: $secondary-font;    
 
-//   @media #{$tablet-up} {
-//     display: flex;
-//     justify-content: space-around;
-//   }
-// }
-
-// .team__member {
-//   width: 100%;
-//   text-align: center;
-
-//   @media #{$mobile-only} {
-//     padding-bottom: 50px;
-//   }
-
-//   @media #{$tablet-up} {
-//     max-width: 30%;
-//   }
-  
-//   img {
-//     @media #{$tablet-only} {
-//       max-width: 200px;
-//       max-height: 200px;
-//     }
-
-//     @media #{$desktop-up} {
-//       max-width: 300px;
-//       max-height: 300px;
-//     }
-//   }
-
-//   .name {
-//     font-weight: $semi-bold;
-//     font-size: 1.75rem;
-//     margin-bottom: 0;
-
-//     @media #{$tablet-up} {
-//       font-size: 1.5rem;      
-//     }
-//   }
-
-//   .twitter {
-//     color: $primary-dark;
-//     font-family: $secondary-font;    
-
-//     @media #{$mobile-only} {
-//       font-size: 1.75rem;
-//       margin-bottom: 0;
-//       margin-top: 10px;
-//     }
-//   }
-// }
+    @media #{$mobile-only} {
+      font-size: 1.75rem;
+      margin-bottom: 0;
+      margin-top: 10px;
+    }
+  }
+}
 
 // // VOLUNTEERS
 

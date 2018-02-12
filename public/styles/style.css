@@ -365,6 +365,20 @@ a[aria-current="page"]::after {
     margin: 0;
     padding: 40px; } }
 
+.main-footer--wrapper {
+  border-top: 1px solid #E8E9EB;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-gap: 1rem; }
+
+.main-footer--copyright {
+  text-align: center;
+  background-color: #F9FAFB;
+  padding: 1rem 2rem; }
+  @media screen and (min-width: 1080px) {
+    .main-footer--copyright {
+      text-align: right; } }
+
 .home-hero__heading {
   font-family: "Roboto Mono", monospace;
   font-weight: 700; }
@@ -466,12 +480,10 @@ a[aria-current="page"]::after {
   padding: 3rem 2rem; }
 
 .home-volunteer {
-  background-color: rgba(255, 178, 2, 0.025);
-  border: 3px solid #FDB12B; }
+  background-color: rgba(255, 178, 2, 0.025); }
 
 .home-newsletter {
-  background-color: rgba(18, 72, 157, 0.025);
-  border: 3px solid #12489D; }
+  background-color: rgba(18, 72, 157, 0.025); }
 
 .home-volunteer img,
 .home-newsletter img {
@@ -508,3 +520,45 @@ a[aria-current="page"]::after {
     .home-volunteer__description,
     .home-newsletter__description {
       margin: 0; } }
+
+.about-hero__heading {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+  color: #12489D; }
+  @media screen and (min-width: 751px) {
+    .about-hero__heading {
+      font-size: 3rem;
+      margin-top: 0; } }
+
+.about-hero p {
+  font-size: 1.5rem;
+  color: #211F1B; }
+
+.about-team__container {
+  background-color: #F9FAFB; }
+
+.about-team__grid {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-gap: 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.about-team__member {
+  width: 100%;
+  text-align: center; }
+  .about-team__member img {
+    width: 100%; }
+  .about-team__member .name {
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 0; }
+    @media screen and (min-width: 751px) {
+      .about-team__member .name {
+        font-size: 1.5rem; } }
+  @media screen and (max-width: 750px) {
+    .about-team__member .twitter {
+      font-size: 1.75rem;
+      margin-bottom: 0;
+      margin-top: 10px; } }
