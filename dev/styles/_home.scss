@@ -1,9 +1,6 @@
 
 // HERO 
-.home-hero {
-  background: linear-gradient(to right, $white, $grey-light);
-}
-
+// ----------------------------------------------
 .home-hero__heading {
   font-family: $secondary-font;
   font-weight: $bold;
@@ -15,7 +12,7 @@
 }
 
 .home-hero__heading--thin {
- font-weight: $semi-bold; 
+ font-weight: $medium; 
  display: block;
 }
 
@@ -28,185 +25,156 @@
 }
 
 .home-hero__cta {
-  font-weight: $medium;
-  font-size: $subhead;
-  font-family: $secondary-font;
+  font-size: 1.5rem;
+
+  a {
+    color: $primary;
+  }
+
+  & a:hover {
+    background-color: $secondary;
+    color: $secondary;
+    text-decoration: none;
+    color: $dark-grey;
+  }
 }
 
-// NEXT MEETUP
+// HOME IMAGE BREAK
+// ----------------------------------------------
+.home-collage__wrapper {
+  display: grid;
+  grid-template-columns: 40% 60%; 
+  grid-gap: 1rem;
+  padding-left: 0;
+  padding-right: 0;
+  max-height: 580px;
 
-.home-upcoming {
-  h2 {
-    @media #{$mobile-only} {
-      font-size: $subhead * 1.25;
-    }
+  img {
+    max-width: 100%;
   }
+}
+
+.home-collage__inner-wrapper {
+  display: grid;
+  grid-gap: 1rem 0;
+
+  img {
+    width: calc(100% - 17px);
+  }
+}
+
+// NEXT MEETUP + MISSED A MEETUP
+// ----------------------------------------------
+.home-upcoming--wrapper,
+.home-missed--wrapper {
+  background-color: $off-white;
+  padding: 3rem 2.5rem ;
+}
+
+.home-upcoming__grid,
+.home-missed__grid {
+  display: grid;
+  grid-template-columns: 40% 60%; 
+  grid-gap: 1rem;
+}
+
+.home-upcoming h3,
+.home-missed h3 {
+  color: $dark-grey;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
 }
 
 .home-upcoming__subhead {
-  font-size: $subhead;
-  font-weight: $medium;
-  margin-bottom: 2.5rem;
-
-  @media #{$tablet-up} {
-    margin-top: .25rem;
-    font-size: $subhead * 1.5;
-  }
-}
-
-.home-upcoming__description {
   font-size: 1.5rem;
-
-  @media #{$tablet-up} {
-    font-size: 1.75rem;
-    margin: 0;
-    max-width: 60%;
-  }
-}
-
-.home-upcoming__cta {
-  font-size: $subhead;
-  font-weight: $regular;
-}
-
-
-// MISSED A MEETUP
-
-.home-missed__wrapper {
-  @media #{$tablet-up} {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-.home-missed {
-  h2 {
-    @media #{$mobile-only} {
-      font-size: $subhead * 1.25;
-    }
-  }
-}
-
-.home-missed__content {
-  @media #{$tablet-up} {
-    padding-left: 5.625rem;
-  }
-}
-
-.home-missed__content,
-.home-missed__image {
-  width: 100%;
-
-  @media #{$tablet-up} {
-    width: 50%;
-  }
-}
-
-.home-missed__image img {
-  width: 100%;
-}
-
-.home-missed__subhead {
-  font-size: $subhead;
   font-weight: $medium;
   margin-bottom: 2.5rem;
 
   @media #{$tablet-up} {
-    margin-top: .25rem;
-    font-size: $subhead * 1.5;
+    margin-top: 0;
   }
 }
 
-
+.home-upcoming__description,
 .home-missed__description {
   font-size: 1.5rem;
 
   @media #{$tablet-up} {
-    font-size: 1.75rem;
     margin: 0;
-    max-width: 60%;
   }
 }
 
-.home-missed__cta {
-  font-size: $subhead;
-  font-weight: $regular;
-}
-
-// OUR MISSION
-
-.home-mission__image {
-  width: 100%;
+.home-upcoming__cta {
+  font-size: 1.5rem;
 }
 
 // CONTACT
-
-.home-contact {
-  h2 {
-    @media #{$mobile-only} {
-      font-size: $subhead * 1.25;
-    }
-  }
+// ----------------------------------------------
+.home-contact__grid {
+  display: grid;
+  grid-template-columns: calc(50% - .5rem) calc(50% - .5rem); 
+  grid-gap: 1rem;
 }
 
-// CONTACT-EMAIL
+.home-get-in-touch h2 {
+  text-decoration: underline;
+  text-decoration-color: $secondary;
+}
 
-.home-contact__email {
+.home-get-in-touch p {
+  color: $dark-grey;
+  font-size: 1.5rem;
+  width: 75%;
+}
+
+// VOLUNTEER + NEWSLETTER
+// ----------------------------------------------
+
+.home-volunteer,
+.home-newsletter {
+  background-color: $off-white;
+  padding: 3rem 2rem ; 
+}
+
+.home-volunteer {
+  background-color:$secondary-light;
+  border: 3px solid $secondary;
+}
+
+.home-newsletter {
+  background-color: $primary-light;
+  border: 3px solid $primary;
+}
+
+.home-volunteer img,
+.home-newsletter img {
+  display: inline;
+  height: 50px;
+  margin-right: 1rem;
+} 
+
+.home-volunteer h3,
+.home-newsletter h3 {
+  color: $dark-grey;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.home-volunteer__subhead,
+.home-newsletter__subhead {
+  color: $dark-grey;
+  font-size: 1.5rem;
+  font-weight: $semi-bold;
+}
+
+.home-volunteer__description,
+.home-newsletter__description {
+  font-size: 1.25rem;
+
   @media #{$tablet-up} {
-    display: flex;
-    justify-content: space-between;
+    margin: 0;
   }
-}
-
-.home-email__content {  
-  @media #{$tablet-up} {
-    padding-right: 5.625rem;
-  }
-}
-
-.home-email__description {
-  font-size: 1.75rem;
-  margin: 1rem 0;
-}
-
-.home-email__cta {
-  font-size: $subhead;
-  font-weight: $regular;
-}
-
-.home-email__image,
-.home-email__content {
-  width: 100%;
-
-  @media #{$tablet-up} {
-    width: 50%;
-  }
-}
-
-.home-email__image img {
-  width: 100%;
-}
-
-// CONTACT-RESOURCES
-
-.home-contact__resources {
-  @media #{$tablet-up} {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-.home-resources--wrapper {
-  padding-top: 50px;
-
-  @media #{$tablet-up} {
-    padding-top: 0;
-    width: 50%;
-    padding-right: 7rem;
-  }
-}
-
-.home-resources__description {
-  font-size: 1.75rem;
-  margin: 1rem 0;
 }

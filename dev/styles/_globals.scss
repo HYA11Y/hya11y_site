@@ -1,18 +1,17 @@
 // ----- COLORS ----- //
 
-$primary: #2196f3;
-$primary-dark: #0069c0;
-$primary-light: #6ec6ff;
+$primary: #12489D;
+$secondary: #FDB12B;
+$tertiary: #FB1A31;;
 
-$secondary: #ffd600;
-$secondary-light: #ffff52;
-$secondary-dark: #c7a500;
+$primary-light: rgba(18, 72, 157,.025);
+$secondary-light: rgba(255,178,2,.025);;
 
-$grey: #212121;
-$grey-light: #eeeeee;
-$grey-dark: #000000;
+$light-grey: #E8E9EB;
+$dark-grey: #211F1B;
 
-$white: #fff;
+$white: #FFF;
+$off-white: #F9FAFB;
 
 // ----- Layout ----- //
 
@@ -22,7 +21,7 @@ body {
 }
 
 .wrapper {
-  max-width: 1425px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 2.5rem;
 }
@@ -61,13 +60,23 @@ h2 {
   font-size: $heading;
   font-weight: $bold;
   font-family: $secondary-font;
-  color: $primary-dark;
+  color: $primary;
   margin: 0;
 }
 
 .subhead {
   font-size: $subhead;
   font-weight: $medium;
+
+  // @media #{$mobile-only} {
+  //   font-size: $subhead * 1.25;
+  // }
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: $bold;
+  font-family: $secondary-font;
 }
 
 
@@ -75,7 +84,7 @@ h2 {
 
 a,
 a:visited {
-  color: $primary-dark;
+  color: $primary;
   font-weight: $semi-bold;
   text-decoration: underline;
   padding: 10px;
@@ -90,7 +99,7 @@ a:visited {
 a:hover,
 a:focus {
   color: $white;
-  background-color: $primary-dark;
+  background-color: $primary;
   text-decoration: none;
 }
 

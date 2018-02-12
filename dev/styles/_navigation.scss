@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 30px 2.5rem;
+  border-bottom: 2px solid $light-grey;
 }
 
 .main-nav {
@@ -34,7 +35,7 @@ a[aria-current="page"]::after  {
   content: "";
   height: 5px;
   width: 100%;
-  background-color: $secondary-dark;
+  background-color: $secondary;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -90,7 +91,7 @@ a[aria-current="page"]::after  {
       height: 1rem;
       margin-right: 10px;
     }
-    background: $primary-dark;
+    background: $primary;
     color: $white;
     font-weight: bold;
     border: 5px solid $white;
@@ -100,8 +101,8 @@ a[aria-current="page"]::after  {
     align-items: center;
     &[aria-expanded=true] {
       background: $white;
-      color: $primary-dark;
-      border: 3px solid $primary-dark;
+      color: $primary;
+      border: 3px solid $primary;
     }
   }
 
@@ -133,28 +134,28 @@ a[aria-current="page"]::after  {
     a {
       margin: 0;
       padding: 20px;
-      border: 2px solid $primary-dark;
-      background: rgba($primary-dark, 0.1);
-      color: $primary-dark;
+      border: 2px solid $secondary;
+      background: rgba($secondary, 0.1);
+      color: $primary;
       display: block;
       transition: background 0.3s;
       &:hover,
       &:focus {
-        background: $primary-dark;
+        background: $secondary;
         color: $white;
       }
     }
     a[aria-current="page"] {
-      border: 2px solid $secondary-dark;
-      background: rgba($secondary-dark, 0.1);
-      color: $secondary-dark;
+      border: 2px solid $secondary;
+      background: rgba($secondary, 0.1);
+      color: $secondary;
       &::after {
         background: transparent;
       }
       &:hover,
       &:focus {
         color: $white;
-        background: $secondary-dark;
+        background: $secondary;
       }
     }
   }

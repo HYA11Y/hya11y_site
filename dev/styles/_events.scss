@@ -1,90 +1,90 @@
-.events-hero {
-  background: linear-gradient( to bottom, $grey-light, $white);  
-}
+// .events-hero {
+//   background: linear-gradient( to bottom, $grey-light, $white);  
+// }
 
-.events-hero__heading {
-  font-family: $secondary-font;
-  font-weight: $bold;
-  color: $primary-dark;
+// .events-hero__heading {
+//   font-family: $secondary-font;
+//   font-weight: $bold;
+//   color: $primary-dark;
 
-  @media  #{$tablet-up} {
-    font-size: $hero;
-    margin-top: 0;
-  }
-}
+//   @media  #{$tablet-up} {
+//     font-size: $hero;
+//     margin-top: 0;
+//   }
+// }
 
-.events-hero__details {
-  font-size: 1.75rem;
-  span {
-    font-weight: bold;
-  }
-}
+// .events-hero__details {
+//   font-size: 1.75rem;
+//   span {
+//     font-weight: bold;
+//   }
+// }
 
-.events-hero__description p,
-.events-hero__description h3,
-.events-hero__description li {
-  @media #{$tablet-up} {
-    font-size: 1.75rem;
-    width: 100%;    
-  }
+// .events-hero__description p,
+// .events-hero__description h3,
+// .events-hero__description li {
+//   @media #{$tablet-up} {
+//     font-size: 1.75rem;
+//     width: 100%;    
+//   }
 
-  @media #{$desktop-up} {
-    font-size: 1.5rem;
-    width: 75%;
-  }
-}
+//   @media #{$desktop-up} {
+//     font-size: 1.5rem;
+//     width: 75%;
+//   }
+// }
 
-.events-suggestions {
-  background: linear-gradient( to right, $white, $grey-light);    
+// .events-suggestions {
+//   background: linear-gradient( to right, $white, $grey-light);    
 
-  p, a {
-    @media #{$tablet-up} {
-      font-size: 1.75rem;
-      width: 100%;    
-    }
+//   p, a {
+//     @media #{$tablet-up} {
+//       font-size: 1.75rem;
+//       width: 100%;    
+//     }
   
-    @media #{$desktop-up} {
-      font-size: 1.5rem;
-      width: 75%;
-    }
-  }
-}
+//     @media #{$desktop-up} {
+//       font-size: 1.5rem;
+//       width: 75%;
+//     }
+//   }
+// }
 
-.events-previous {
-  p {
-    @media #{$tablet-up} {
-      font-size: 1.75rem;
-      width: 100%;    
-    }
+// .events-previous {
+//   p {
+//     @media #{$tablet-up} {
+//       font-size: 1.75rem;
+//       width: 100%;    
+//     }
   
-    @media #{$desktop-up} {
-      font-size: 1.8rem;
-      width: 75%;
-    }
-  }
-}
+//     @media #{$desktop-up} {
+//       font-size: 1.8rem;
+//       width: 75%;
+//     }
+//   }
+// }
 
-.events-previous__block {
-  width: 100%;
+// .events-previous__block {
+//   width: 100%;
 
-  @media #{$tablet-up} {
-    display: flex;
-  }
-}
+//   @media #{$tablet-up} {
+//     display: flex;
+//   }
+// }
 
-.events-previous__details {
-  @media #{$tablet-up} {
-    padding-left: 5.625rem;
-  }
+// .events-previous__details {
+//   @media #{$tablet-up} {
+//     padding-left: 5.625rem;
+//   }
 
-  h3 {
-    @media #{$tablet-up} {
-      font-size: 1.75rem;
-    }
+//   h3 {
+//     @media #{$tablet-up} {
+//       font-size: 1.75rem;
+//     }
   
-    @media #{$desktop-up} {
-      font-size: 2rem;
-    }
-  }
-}
+//     @media #{$desktop-up} {
+//       font-size: 2rem;
+//     }
+//   }
+// }
 

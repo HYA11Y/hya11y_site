@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>HackerYou Web Accessibility Club</title>
+	<title>HackerYou Web Accessibility Club | home-email__description</title>
 	<link rel="stylesheet" href="public/styles/style.css">
+	<link rel="icon" type="image/png" href="assets/favicon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="assets/favicon/favicon-16x16.png" sizes="16x16" />	
 </head>
+
 <body class="no-js">
 	<!-- The use of an SVG sprite to render the menu icon is drawn from Heydon Pickering's book: Inclusive Design Patterns, "A Menu Button" chapter -->
 	<svg style="display:none">
@@ -48,69 +51,87 @@
 			<div class="wrapper">
 				<h1 class="home-hero__heading"><span class="home-hero__heading--thin">HackerYou</span> Accessibility Club</h1>
 				<p class="home-hero__subhead subhead">A meetup for junior developers working to make the web an inclusive space.</p>
-				<p class="home-hero__cta"><a href="">Learn more about the club</a></p>
+				<p class="home-hero__cta"><a href="about.html">Learn more about the club</a></p>
+			</div>
+		</section>
+
+		<section class="home-collage">
+			<div class="home-collage__wrapper wrapper"> 
+				<img class="home-collage__simple" src="assets/home/simple.jpg" alt="" aria-hidden="true">
+				<!-- Photo by Ben Kolde on Unsplash -->
+
+				<div class="home-collage__inner-wrapper">
+					<img class="home-collage--filter" src="assets/home/missed-a-meetup.jpg" alt="" aria-hidden="true">
+					<!-- Photo by Jen Taylor at HackerYou -->
+					<img class="" src="assets/home/code-break.png" alt="" aria-hidden="true">
+					<!-- Photo by Markus Spiske on Unsplash -->
+				</div>
+
 			</div>
 		</section>
 
 		<section class="gutters home-upcoming">
+			<div class="wrapper home-upcoming--wrapper">
+				<div class="home-upcoming__grid">
+					<h2>Next meetup</h2>
+					<div>
+							<h3>Newsletter Launch</h3>
+							<p class="home-upcoming__subhead">February 2018 at <a href="http://www.hackeryou.com/">HackerYou</a></p>
+							<p class="home-upcoming__description">Help us celebrate the launch of our new website and monthly newsletter!</p>
+							<p class="home-upcoming__cta"><a href="events.html/#newsletter">Event details</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- UNCOMMENT THIS SECTION WHEN BLOG LAUNCHED  -->
+		<!-- <section class="home-missed">
+			<div class="wrapper home-missed--wrapper">
+				<div class="home-missed__grid">
+					<h2>Missed a <br>meetup?</h2>
+						<div>
+							<h3>Read our recaps</h3>
+							<p class="home-missed__description"><a href="">Check out our blog</a>for recaps of our previous meetups.</p>
+						</div>
+				</div>
+			</div>
+		</section> -->
+
+		<section class="home-contact">
 			<div class="wrapper">
-				<h2>Next meetup: Website Launch</h2>
-				<p class="home-upcoming__subhead">January 26, 2018 at HackerYou</p>
-				<p class="home-upcoming__description">Help us celebrate the launch of our new website and monthly newsletter!</p>
-				<p class="home-upcoming__cta"><a href="">Event details</a></p>
-			</div>
-		</section>
+				<div class="home-get-in-touch gutter--bottom-only">
+						<h2>Get in touch</h2>
 
-		<section class="gutter--bottom-only home-missed">
-			<div class="wrapper home-missed__wrapper">
-				<div class="home-missed__image">
-					<img src="assets/home/missed-a-meetup.jpg" alt="">
-				</div>
-				<div class="home-missed__content gutters--half">
-					<h2>Missed a meetup?</h2>
-					<p class="home-missed__subhead">Read our recaps</p>
-					<p class="home-missed__cta"><a href="">Check out our blog</a>for recaps of our previous meetups.</p>
-				</div>
-			</div>
-		</section>
+						<p>Do you have questions about the club? Or tips on how we can make this site more accessible?</p>
 
-		<section class="home-mission">
-			<img class="home-mission__image" src="assets/home/home-banner.png" alt="">
+						<p>Please don't hesitate to get in touch! We'd love to hear from you.</p>
 
-			<!-- <blockquote>
-				<p> “The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect.”</p>
-				<cite>Tim Berners Lee, inventor of the World Wide Web</cite>
-			</blockquote> -->
-		</section>
-
-		<section class="gutters home-contact">
-			<div class="wrapper home-contact__email">
-				<div class="home-email__content">
-					<h2>Get in touch</h2>
-
-					<p class="home-email__description">Do you have questions about the club? Or tips on how we can make this site more accessible?</p>
-
-					<p class="home-email__description">Please don't hesitate to get in touch! We'd love to hear from you.</p>
-
-					<p class="home-email__cta"><a href="">Send us an email</a></p>
+						<p><a href="mailto:hya11y@gmail.com">Send us an email</a></p>
 				</div>
 
-				<div class="home-email__image">
-					<img src="assets/home/contact-us.jpg" alt="">
-				</div>
-			</div>
+				<div class="home-contact__grid">
+					<div class="home-volunteer">
+						<h3>
+							<!-- Volunteer by Made by Made from the Noun Project -->
+							<img src="assets/home/icon-volunteer.png" alt="" aria-hidden="true" class="home-volunteer__icon">
+							Volunteer
+						</h3>
 
-			<div class="gutters">
-				<div class="wrapper home-contact__resources">
-					<div class="home-resources--wrapper">
-						<h2>Volunteer at an upcoming meetup</h2>
-						<p class="home-resources__description"><a href="">Sign up for our volunteer mailing list</a> to learn how you can get involved with the HackerYou Accessibility Club.</p>
+						<p class="home-volunteer__subhead">Volunteer at an upcoming meetup</p>
+						<p class="home-volunteer__description"><a href="">Sign up for our volunteer mailing list</a>to learn how you can get involved with the HackerYou Accessibility Club.</p>
 					</div>
 
-					<div class="home-resources--wrapper">
-						<h2>Learn more about accessibility</h2>
-						<p class="home-resources__description"><a href="">Sign up for our newsletter</a>! Once a month we'll send you articles, tutorials, and tools that can help you build accessible sites.</p>
+					<div class="home-newsletter">
+						<h3>
+							<!-- Newsletter by H Alberto Gongora from the Noun Project -->
+							<img src="assets/home/icon-newsletter.png" alt="" aria-hidden="true" class="home-newsletter__icon">
+							Newsletter
+						</h3>
+
+						<p class="home-newsletter__subhead">Learn more about accessibility</p>
+						<p class="home-newsletter__description"><a href="">Sign up for our newsletter</a>! Once a month we'll send you articles, tutorials, and tools that can help you build accessible websites and apps.</p>
 					</div>
+				</div>
 				</div>
 			</div>
 		</section>
