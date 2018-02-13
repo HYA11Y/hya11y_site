@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HackerYou Accessibility Club | Code of Conduct</title>
+  <link rel="stylesheet" href="public/styles/style.css">
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="assets/favicon/favicon-16x16.png" sizes="16x16" />	
+</head>
+<body class="no-js">
+  <!-- The use of an SVG sprite to render the menu icon is drawn from Heydon Pickering's book: Inclusive Design Patterns, "A Menu Button" chapter -->
+  <svg style="display:none">
+    <symbol id="navicon" viewBox="0 0 20 20">
+      <path d="m0-0v4h20v-4h-20zm0 8v4h20v-4h-20zm0 8v4h20v-4h-20z" 
+      fill="currentColor" />
+    </symbol>
+  </svg>
+  
+	<a class="skip-link visuallyhidden" href="#main">Skip to main</a>
+	<div class=" wrapper navigation-wrapper">
+		<a href="home.html" class="main-nav__logo-link">
+			<!-- Image credit: "coding" by Jugalbandi from the Noun Project -->
+			<img class="logo-link__logo" src="assets/logo.svg" alt="">
+			<span class="logo-link__text visuallyhidden">Home</span>
+		</a>
+
+		<nav role="navigation" aria-label="site">
+			<button class="main-nav__button" aria-expanded="false" hidden>
+        <svg>
+          <use xlink:href="#navicon"></use>
+        </svg>
+        Menu
+      </button>
+			<ul class="main-nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="events.html">Events</a></li>
+        <li><a href="code-of-conduct.html" aria-current="page">Code of Conduct</a></li>        
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<main>
+    <section class="code gutters">
+      <div class="wrapper">
+        <h1 class="code__heading">Code of Conduct</h1>
+        
+        <p>As the HackerYou Web Accessibility Club is dedicated to inclusiveness online, all participants in our meet-ups (presenters and attendees alike) must respect that inclusiveness in person as well. This means that everyone should enjoy a safe and welcoming space at our meet-ups, regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age, or religion.</p>
+        
+        <p>We require our presenters to be mindful of this code when choosing the language and/or imagery used in their presentations. We will not tolerate harassment of participants in any form.</p>
+
+        <p>Harassment includes, but is not limited to:
+          <ul>
+            <li>Verbal comments and/or images that reinforce social structures of domination;</li>
+            <li>Deliberate intimidation, stalking, or following;</li>
+            <li>Sustained disruptive behaviour;</li>
+            <li>Inappropriate physical contact;</li>
+            <li>Unwelcome sexual attention;</li>
+            <li>Advocating for, or encouraging, any of the above.</li>
+          </ul>
+        
+          <h2>Enforcement</h2>
+  
+          <p>Participants who are asked to stop any harassing behaviour are expected to comply immediately.</p>
+  
+          <p>Meet-up organizers retain the right to take any actions necessary to prevent participants who do not abide by this code from creating a hostile environment.</p>
+  
+          <h2>Reporting</h2>
+  
+          <p>If any participant or speaker who is part of the HackerYou Accessibility Club community makes you feel unsafe or unwelcome (either online, or in-person), please report it as soon as possible by one of the following methods:</p>
+        
+          <div class="subsection">
+            <h3>Making a Personal Report</h3>
+  
+            <p>Meet-up organizers Jen Taylor and Maureen Holland will always be available to listen to your report in person at events. When making an in-person report, please rest assured that you will be able to make the report in a space where you cannot be overheard and you can bring someone to support you if needed. You will not be asked to confront anyone and your identity will not be shared.</p>
+  
+            <p>You can also contact Maureen, Jen, and Francine by email:</p>
+            <p> Club Email: <a href="mailto:hya11y@gmail.com"> maureen[at]maureenlholland.com</a></p>
+            <p> Maureen Holland: <a href="mailto:maureen@maureenholland.com"> maureen[at]maureenlholland.com</a></p>
+            <p>Jen Taylor: <a href="mailto:jen.nicole.taylor@gmail.com">jen.nicole.taylor[at]gmail.com</a></p>
+          </div>
+  
+          <div class="subsection">
+            <h3>Making an Anonymous Report:</h3>
+  
+            <p>If you prefer, you can also make an anonymous report. You do not have to enter an email address or your name to make a report through the following form:</p>
+          </div>
+
+          <div class="anon-form--wrapper">
+            <iframe class="anon-form" src="https://docs.google.com/forms/d/e/1FAIpQLSeV6O8KV5VuIbjgtoVG0Zi3SBjFz-0ZAEKzNP2ZrBOlNye-QQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+          </div>
+        
+        
+          <p>This anti-harassment policy is based on the <a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy">sample policy from the Geek Feminism wiki</a>, created by the Ada Initiative and other volunteers.</p>
+      </div>
+    </section>
+  </main>
+
+	<footer class="main-footer">
+      <div class="wrapper gutters main-footer--wrapper">
+        <div class="footer-container">
+          <h2>Contact</h2>
+          <p>Email: <a href="">hya11y@gmail.com</a></p>
+          <p>Twitter: <a href=""></a></p>
+        </div>
+  
+        <div class="footer-container">
+          <h2>Standards</h2>
+          <p><a  href="">Code of Conduct</a></p>
+          <p><a href="">Accessibility Statement</a></p>
+        </div>
+  
+        <div class="footer-container">
+          <h2>Supporters</h2>
+          <p><a href="">HackerYou</a></p>
+          <p><a href="">a11yTO</a></p>
+        </div>
+      </div>
+    </footer>
+    
+    <div class=" wrapper main-footer--copyright">
+      <p>Copyright 2017 HackerYou Accessibility Club</p>
+    </div>
+
+	<script src="public/scripts/main.js"></script>
+
+</body>
+</html>

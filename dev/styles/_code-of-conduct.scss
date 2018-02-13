@@ -1,0 +1,56 @@
+// HEADING
+// ----------------------------------------------
+.code__heading {
+  font-family: $secondary-font;
+  font-weight: $bold;
+  color: $primary;
+
+  @media  #{$tablet-up} {
+    font-size: $hero / 1.25;
+    margin-top: 0;
+  }
+}
+
+
+// CODE OF CONDUCT
+// ----------------------------------------------
+.code {
+  h2 {
+    color: $primary;
+    font-size: 2rem;
+    font-weight: $bold;
+    font-family: $secondary-font;
+    margin-top: 3rem;
+    margin-bottom: .5rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+
+  .code ul {
+    font-size: 1.25rem;
+  }
+}
+
+.subsection {
+  padding-left: 3rem;
+
+  h3 {
+    font-size: 1.75rem;
+    margin-top: 3rem;
+  } 
+}
+
+// ANYONYMOUS FORM
+// ----------------------------------------------
+.anon-form--wrapper {
+  text-align: center;
+}
+
+.anon-form {
+  width: 80%;
+  height: 800px;
+  margin: 2rem 0;
+}

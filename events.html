@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>About - HackerYou Web Accessibility Club</title>
-	<link rel="stylesheet" href="public/styles/style.css">
+	<title>HackerYou Web Accessibility Club | About</title>
+  <link rel="stylesheet" href="public/styles/style.css">
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="assets/favicon/favicon-16x16.png" sizes="16x16" />	
 </head>
 <body class="no-js">
   <!-- The use of an SVG sprite to render the menu icon is drawn from Heydon Pickering's book: Inclusive Design Patterns, "A Menu Button" chapter -->
@@ -33,135 +35,136 @@
 				<li><a href="index.html">Home</a></li>
 				<li><a href="about.html">About</a></li>
 				<li><a href="events.html" aria-current="page">Events</a></li>
-				<li><a href="speakers.html">Speakers</a></li>
-				<li><a href="resources.html">Resources</a></li>
+				<li><a href="code-of-conduct.html">Code of Conduct</a></li>
+        ces</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
 	</div>
 
 	<main>
-    <section class="events-hero gutters">
+    <section class="events-hero gutter--top-only">
       <div class="wrapper">
         <h1 class="events-hero__heading">Events</h1>
-        
-        <h2>Next Meetup: TO DO</h2>
-        <p class="events-hero__details"><span>When:</span> Jan 1, 2018</p>
-        <p class="events-hero__details"><span>Where:</span>  HackerYou <a href="">(283 Queen Street West, Toronto ON)</a></p>
+      </div>
+    </section>
 
-        <div class="events-hero__description">
-          <p>This is where we describe our next meetup and the goal of the session. This is where we describe our next meetup and the goal of the session. This is where we describe our next meetup and the goal of the session.</p>
+    <section class="events-upcoming">
+      <div class="events-upcoming--wrapper">
+        <div class=" events-upcoming__grid">
+          <div class="events-upcoming__next">
+            <h2>
+              <img src="assets/events/icon-calendar.png" alt="">
+              Upcoming Events
+            </h2> 
+            
+            <p>Our next meetup is <span class="events-upcoming__date">February 15th at HackerYou</span>.</p> 
+            
+            <p><a href="#">Visit our Eventbrite page</a></p>
+          </div>
+          
+          <div class="events-upcoming__idea">
+            <!-- Idea by Iconika from the Noun Project -->
+            <h2>
+              <img src="assets/events/icon-idea.png" alt="">
+              Have an idea?
+            </h2>
+            
+            <p>Do you know someone who should speak at an upcoming meetup? Is there a topic you think we should cover?</p>
 
-          <p>Here we can introduce the speaker and their experience. Here we can introduce the speaker and their experience. Here we can introduce the speaker and their experience.</p>
-
-          <h3>What you'll learn:</h3>
-          <ul>
-            <li>How screen readers 'read' a website</li>
-            <li>How users navigate content with a screen reader</li>
-            <li>Best and worst practices for testing with screen readers</li>
-            <li>How to get started testing a screen reader on your laptop</li>
-          </ul>
-
-          <h3>How to prepare:</h3>
-          <ul>
-            <li>Bring your laptop, a power cord, and have your favourite text editor ready.</li>
-            <li><a href="https://www.google.ca/chrome/browser/desktop/index.html?brand=CHBD&gclid=Cj0KCQiAtJbTBRDkARIsAIA0a5No1NAASU8DxohA8aINk77XaWmt4va0jLL2YwuzLz7dXsaAtJepY9gaAhBiEALw_wcB">Download the Google Chrome browser</a> onto your machine.</li>
-          </ul>
+            <p><a href="">Email us with your suggestions</a></p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="events-suggestions gutters">
-      <div class="wrapper">
-        <h2>Have an idea for our next event?</h2>
-
-        <p>Do you know someone who should speak at an upcoming meetup? Is there a topic you think we should cover?</p>
-
-        <a href="">Email us with your suggestions</a>
-      </div>
-    </section>
-
-    <section class="events-previous gutters">
+    <section class="events-past gutters">
       <div class="wrapper">
         <h2>Past meetups</h2>
+        <div class="">
 
-        <p>Visit our blog for recaps of our last meetups.</p>
+        <!-- Uncomment when blog launches -->
+        <!-- <p>Visit our blog for recaps of our last meetups.</p> -->
 
-        <div class="events-previous__block gutters--half">
+        <div class="events-past__grid gutters--half">
           <img src="https://picsum.photos/500/300" alt="">
 
-          <div class="events-previous__details">
+          <div class="events-past__details">
             <h3>Introduction to A11y</h3>
+            <p class="events-past__date">February 2018</p>
             <p><a href="">Read the recap</a></p>
           </div>
         </div>
 
-        <div class="events-previous__block gutters--half">
+        <div class="events-past__grid gutters--half">
           <img src="https://picsum.photos/500/300" alt="">
-          
-          <div class="events-previous__details">
-            <h3>Introduction to WCAG 2.0</h3>
+
+          <div class="events-past__details">
+              <h3>Introduction to WCAG 2.0</h3>
+            <p class="events-past__date">February 2018</p>
             <p><a href="">Read the recap</a></p>
           </div>
         </div>
 
-        <div class="events-previous__block gutters--half">
+        <div class="events-past__grid gutters--half">
           <img src="https://picsum.photos/500/300" alt="">
-          
-          <div class="events-previous__details">
-            <h3>Introduction to screen readers</h3>
+
+          <div class="events-past__details">
+              <h3>Introduction to Screen Readers</h3>
+            <p class="events-past__date">February 2018</p>
             <p><a href="">Read the recap</a></p>
           </div>
         </div>
 
-        <div class="events-previous__block gutters--half">
+        <div class="events-past__grid gutters--half">
           <img src="https://picsum.photos/500/300" alt="">
-          
-          <div class="events-previous__details">
-            <h3>#a11yTO conference recap</h3>
+
+          <div class="events-past__details">
+              <h3>#a11yTO Conference Recap</h3>
+            <p class="events-past__date">February 2018</p>
             <p><a href="">Read the recap</a></p>
           </div>
         </div>
 
-        <div class="events-previous__block gutters--half">
+        <div class="events-past__grid gutters--half">
           <img src="https://picsum.photos/500/300" alt="">
-          
-          <div class="events-previous__details">
-            <h3>Hands-on testing with assistive technology</h3>
+
+          <div class="events-past__details">
+              <h3>Hands-on testing with assistive technology</h3>
+            <p class="events-past__date">February 2018</p>
             <p><a href="">Read the recap</a></p>
           </div>
         </div>
-
+      </div>
       </div>
     </section>
   </main>
   
-    <footer class=" gutters main-footer">
-      <div class="wrapper main-footer--wrapper">
-        <div class="footer-container">
-          <h2>Contact</h2>
-          <p>Email: <a href="">hya11y@gmail.com</a></p>
-        </div>
-  
-        <div class="footer-container">
-          <h2>Standards</h2>
-          <p><a href="">Code of Conduct</a></p>
-          <p><a href="">Accessibility Statement</a></p>
-        </div>
-  
-        <div class="footer-container">
-          <h2>Supporters</h2>
-          <p><a href="">HackerYou</a></p>
-          <p><a href="">a11yTO</a></p>
-        </div>
+  <footer class="main-footer">
+    <div class="wrapper gutters main-footer--wrapper">
+      <div class="footer-container">
+        <h2>Contact</h2>
+        <p>Email: <a href="">hya11y@gmail.com</a></p>
+        <p>Twitter: <a href=""></a></p>
       </div>
-    </footer>
-    
-    <div class="main-footer--copyright">
-      <div class="wrapper">
-        <p>Copyright 2017 HackerYou Accessibility Club</p>
+
+      <div class="footer-container">
+        <h2>Standards</h2>
+        <p><a  href="">Code of Conduct</a></p>
+        <p><a href="">Accessibility Statement</a></p>
+      </div>
+
+      <div class="footer-container">
+        <h2>Supporters</h2>
+        <p><a href="">HackerYou</a></p>
+        <p><a href="">a11yTO</a></p>
       </div>
     </div>
+  </footer>
+    
+  <div class=" wrapper main-footer--copyright">
+    <p>Copyright 2017 HackerYou Accessibility Club</p>
+  </div>
   
     <script src="public/scripts/main.js"></script>
   

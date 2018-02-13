@@ -1,90 +1,99 @@
-// .events-hero {
-//   background: linear-gradient( to bottom, $grey-light, $white);  
-// }
 
-// .events-hero__heading {
-//   font-family: $secondary-font;
-//   font-weight: $bold;
-//   color: $primary-dark;
+// EVENTS HERO
+// ----------------------------------------------
+.events-hero__heading {
+  font-family: $secondary-font;
+  font-weight: $bold;
+  color: $primary;
 
-//   @media  #{$tablet-up} {
-//     font-size: $hero;
-//     margin-top: 0;
-//   }
-// }
+  @media  #{$tablet-up} {
+    font-size: $hero / 1.25;
+    margin-top: 0;
+  }
+}
 
-// .events-hero__details {
-//   font-size: 1.75rem;
-//   span {
-//     font-weight: bold;
-//   }
-// }
+// UPCOMING EVENTS + EVENT IDEAS
+// ----------------------------------------------
 
-// .events-hero__description p,
-// .events-hero__description h3,
-// .events-hero__description li {
-//   @media #{$tablet-up} {
-//     font-size: 1.75rem;
-//     width: 100%;    
-//   }
+.events-upcoming--wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
 
-//   @media #{$desktop-up} {
-//     font-size: 1.5rem;
-//     width: 75%;
-//   }
-// }
+.events-upcoming__grid {
+  display: grid;
+  grid-template-columns: calc(50% - 1rem) calc(50% - 1rem); 
+  grid-gap: 2rem;
+}
 
-// .events-suggestions {
-//   background: linear-gradient( to right, $white, $grey-light);    
+.events-upcoming__next,
+.events-upcoming__idea {
+  background-color: $off-white;
+  padding: 3rem 2rem ; 
+}
 
-//   p, a {
-//     @media #{$tablet-up} {
-//       font-size: 1.75rem;
-//       width: 100%;    
-//     }
-  
-//     @media #{$desktop-up} {
-//       font-size: 1.5rem;
-//       width: 75%;
-//     }
-//   }
-// }
+.events-upcoming__next h2,
+.events-upcoming__idea h2 {
+  color: $dark-grey;
+  font-size: 2rem;
+  font-weight: $bold;
+  font-family: $secondary-font;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
-// .events-previous {
-//   p {
-//     @media #{$tablet-up} {
-//       font-size: 1.75rem;
-//       width: 100%;    
-//     }
-  
-//     @media #{$desktop-up} {
-//       font-size: 1.8rem;
-//       width: 75%;
-//     }
-//   }
-// }
+.events-upcoming__next img,
+.events-upcoming__idea img {
+  display: inline;
+  width: 50px;
+  margin-right: 1rem;
+} 
 
-// .events-previous__block {
-//   width: 100%;
+.events-upcoming p {
+  font-size: 1.5rem;
+  color: $dark-grey;
+}
 
-//   @media #{$tablet-up} {
-//     display: flex;
-//   }
-// }
+.events-upcoming__date {
+  font-weight: $bold;
+}
 
-// .events-previous__details {
-//   @media #{$tablet-up} {
-//     padding-left: 5.625rem;
-//   }
+// PAST EVENTS
+// ----------------------------------------------
 
-//   h3 {
-//     @media #{$tablet-up} {
-//       font-size: 1.75rem;
-//     }
-  
-//     @media #{$desktop-up} {
-//       font-size: 2rem;
-//     }
-//   }
-// }
+.events-past__grid {
+  display: flex;
+
+  img {
+    width: 460px;
+    height: 310px;
+  }
+}
+
+.events-past__details {
+  padding-left: 2rem;
+
+  h3 {
+    font-size: 2rem;
+    font-family: $main-font;
+    margin-top: 0;
+    margin-bottom: .25rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  .events-past__date {
+    font-size: 1.25rem;
+    font-weight: $semi-bold;
+  }
+}
+
+
+
 
