@@ -281,9 +281,17 @@ a[aria-current="page"]::after {
   - reload styles when user resizes screen
 --------------------------------------*/
 @media screen and (max-width: 750px) {
-  .no-js .navigation-wrapper {
-    display: block; }
-  .no-js .main-nav__button {
+  .navigation-wrapper {
+    display: block;
+    width: 100%;
+    top: 0;
+    background: white; }
+    .navigation-wrapper nav {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0; }
+  .button__close {
     display: none; }
   .main-nav__button {
     background: #0069c0;
@@ -297,7 +305,8 @@ a[aria-current="page"]::after {
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    margin: 15px 15px 0 auto; }
     .main-nav__button svg {
       width: 1rem;
       height: 1rem;
@@ -306,17 +315,13 @@ a[aria-current="page"]::after {
       background: #fff;
       color: #0069c0;
       border: 3px solid #0069c0; }
-  .navigation-wrapper {
-    width: 100%;
-    top: 0;
-    background: white; }
   .main-nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
-    padding: 0 2.5rem;
+    padding: 0 15px;
     background: #fff;
     text-align: center;
     left: 0; }
@@ -338,26 +343,27 @@ a[aria-current="page"]::after {
         background: #0069c0;
         color: #fff; }
     .main-nav a[aria-current="page"] {
-      border: 2px solid #c7a500;
-      background: rgba(199, 165, 0, 0.1);
-      color: #c7a500; }
-      .main-nav a[aria-current="page"]::after {
+      border: 4px solid #0069c0;
+      font-weight: bold; }
+      .main-nav a[aria-current="page"]:after {
         background: transparent; }
-      .main-nav a[aria-current="page"]:hover, .main-nav a[aria-current="page"]:focus {
-        color: #fff;
-        background: #c7a500; }
+  .fixed {
+    overflow: hidden; }
   .fixed .navigation-wrapper {
     position: fixed;
     width: 100%; }
-  .fixed main {
-    margin-top: 100px; }
   .fixed .main-nav {
     position: fixed;
-    top: 0;
+    height: calc(100vh - 100px);
+    overflow: scroll;
     bottom: 0;
     width: 100%;
     margin: 0;
-    padding: 40px; } }
+    padding: 40px; }
+  .no-js .main-nav__button {
+    display: none; }
+  .no-js .navigation-wrapper nav {
+    position: static; } }
 
 .main-footer {
   padding: 30px 2.5rem;

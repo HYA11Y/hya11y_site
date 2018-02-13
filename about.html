@@ -23,21 +23,24 @@
 		</a>
 
 		<nav role="navigation" aria-label="site">
-			<button class="main-nav__button" aria-expanded="false" hidden>
+      <!-- a11y tip from Heydon Pickering: Menu button should be placed within the <nav>, so it's still reachable by landmark navigation 
+      https://twitter.com/heydonworks/status/766948134169620480
+      -->
+      <button class="main-nav__button" aria-expanded="false" hidden>
         <svg>
           <use xlink:href="#navicon"></use>
         </svg>
-        Menu
+        <span aria-live="polite" id="button__text">Menu</span>
       </button>
-			<ul class="main-nav">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html" aria-current="page">About</a></li>
-				<li><a href="events.html">Events</a></li>
-				<li><a href="speakers.html">Speakers</a></li>
-				<li><a href="resources.html">Resources</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
+      <ul class="main-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="speakers.html">Speakers</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 	</div>
 
 	<main>
@@ -139,7 +142,7 @@
 
 	<footer class="gutters main-footer">
 		<div class="wrapper main-footer--wrapper">
-			<div class="footer-container">
+			<div class="footer-container" id="contact">
 				<h2>Contact</h2>
 				<p>Email: <a href="">hya11y@gmail.com</a></p>
 			</div>
