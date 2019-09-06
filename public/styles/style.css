@@ -174,13 +174,17 @@ h2 {
   font-size: 1.75rem;
   font-weight: 500; }
 
+a {
+  -webkit-transition: background-color 0.1s;
+  transition: background-color 0.1s; }
+
 a,
 a:visited {
   color: #0069c0;
   font-weight: 600;
   text-decoration: underline;
-  padding: 10px;
-  margin-left: -10px; }
+  padding: 3px;
+  margin: -3px; }
   a img.external-link,
   a:visited img.external-link {
     height: 10px;

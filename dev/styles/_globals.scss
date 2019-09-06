@@ -31,7 +31,7 @@ body {
   padding: 50px 0;
 
   @media  #{$tablet-up} {
-    padding: 100px 0;  
+    padding: 100px 0;
   }
 }
 
@@ -41,7 +41,7 @@ body {
 
 .gutter--top-only {
   padding-top: 50px;
-  
+
   @media  #{$tablet-up} {
     padding-top: 100px;
   }
@@ -72,14 +72,18 @@ h2 {
 
 
 // ----- LINKS ----- //
+a {
+  transition: background-color 0.1s;
+}
 
 a,
 a:visited {
   color: $primary-dark;
   font-weight: $semi-bold;
   text-decoration: underline;
-  padding: 10px;
-  margin-left: -10px;
+  padding: 3px;
+  margin: -3px;
+  // margin-left: -10px;
 
   img.external-link {
     height: 10px;
@@ -96,27 +100,25 @@ a:focus {
 
 // ----- SKIP LINK ----- //
 
-.skip-link { 
+.skip-link {
   font-weight: $semi-bold;
-  font-size: $subhead;   
-} 
- 
-.skip-link:focus { 
+  font-size: $subhead;
+}
+
+.skip-link:focus {
   padding: 15px 30px;
   left: 1.5rem;
-  top: 1.5rem; 
-  width:auto; 
-  height:auto; 
-} 
+  top: 1.5rem;
+  width:auto;
+  height:auto;
+}
 
 // ----- VISUALLY HIDDEN ------
 
 .visuallyhidden {
-  position:absolute; 
-  left:-10000px; 
-  width:1px; 
-  height:1px; 
+  position:absolute;
+  left:-10000px;
+  width:1px;
+  height:1px;
   overflow:hidden;
 }
-
-
